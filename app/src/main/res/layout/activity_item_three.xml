@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlt_three"
+    >
+    <ImageView
+        android:id="@+id/img_three_item"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/test"/>
+    <TextView
+        android:layout_toRightOf="@+id/img_three_item"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textSize="20sp"
+        android:text="每日一词"
+        />
+    <ImageView
+        android:layout_margin="5sp"
+        android:layout_below="@+id/img_three_item"
+        android:layout_width="match_parent"
+        android:background="@mipmap/test"
+        android:layout_height="60dp"
+        />
+</RelativeLayout>

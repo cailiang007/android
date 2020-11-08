@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerViewActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转RecyclerViewActivity"/>
+
+    <Button
+        android:id="@+id/btn_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转CompanyListActivity"/>
+
+    <Button
+        android:id="@+id/btn_first_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转FirstServiceActivity"/>
+
+    <Button
+        android:id="@+id/btn_second_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转SecondServiceActivity"/>
+
+    <Button
+        android:id="@+id/btn_first_intent_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转FirstIntentService"/>
+
+    <Button
+        android:id="@+id/btn_first_notification_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转FirstNotificationActivity"/>
+
+    <Button
+        android:id="@+id/btn_first_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转FirstNotificationActivity"/>
+
+    <Button
+        android:id="@+id/btn_first_bitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转BitMap"/>
+    <com.example.myapplication.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

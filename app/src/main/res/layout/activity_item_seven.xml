@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@mipmap/cl"
+    >
+    <ImageView
+        android:layout_margin="5sp"
+        android:id="@+id/iv_item_one"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test"
+        />
+    <LinearLayout
+        android:layout_margin="5sp"
+        android:layout_width="221dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:text="变变变！如何画出数字"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="1"
+            />
+
+    </LinearLayout>
+</LinearLayout>

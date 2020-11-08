@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".MyApplication"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyActivity"/>
+        <activity android:name=".MainActivity1"/>
+        <activity android:name=".MainActivity3"/>
+        <activity android:name=".otherActivity"/>
+        <activity android:name=".MainActivity4"/>
+        <activity android:name=".MainActivity5"/>
+        <activity android:name=".bitmap.BitMapActivity"/>
+        <activity android:name=".RecyclerViewActivity"/>
+        <activity android:name=".service.FirstServiceActivity"/>
+        <activity android:name=".service.SecondServiceActivity"/>
+        <activity android:name=".service.FirstIntentServiceActivity"/>
+        <activity android:name=".notification.FirstNotificationActivity"/>
+        <activity android:name=".notification.OtherActivity"/>
+        <activity android:name=".viewpager.OneActivity"/>
+        <activity android:name=".companylist.CompanyListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:name=".LongRunningService" android:exported="false">
+            <intent-filter >
+                <action android:name="com.test.intentservice"/>
+            </intent-filter>
+        </service>
+
+        <!-- 配置Service组件,同时配置一个action -->
+        <service android:name=".service.FirstTestService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.jay.example.service.FIRST_TEST_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.SecondTestService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.jay.example.service.TEST_SERVICE2"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.FirstIntentService" android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.jay.example.service.TEST_SERVICE2"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
