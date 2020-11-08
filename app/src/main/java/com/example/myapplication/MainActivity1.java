@@ -62,4 +62,9 @@ public class MainActivity1 extends AppCompatActivity {
         });*/
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
 }
