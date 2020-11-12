@@ -27,6 +27,7 @@
         <activity android:name=".otherActivity"/>
         <activity android:name=".MainActivity4"/>
         <activity android:name=".MainActivity5"/>
+        <activity android:name=".sqlite.SqlActivity"/>
         <activity android:name=".bitmap.BitMapActivity"/>
         <activity android:name=".RecyclerViewActivity"/>
         <activity android:name=".service.FirstServiceActivity"/>

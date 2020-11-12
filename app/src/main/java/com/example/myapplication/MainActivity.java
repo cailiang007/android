@@ -15,6 +15,7 @@ import com.example.myapplication.notification.FirstNotificationActivity;
 import com.example.myapplication.service.FirstIntentServiceActivity;
 import com.example.myapplication.service.FirstServiceActivity;
 import com.example.myapplication.service.SecondServiceActivity;
+import com.example.myapplication.sqlite.SqlActivity;
 import com.example.myapplication.viewpager.OneActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -87,6 +88,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BitMapActivity.class));
+            }
+        });
+
+        Button button8 = findViewById(R.id.btn_first_sqlite);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SqlActivity.class));
             }
         });
 
